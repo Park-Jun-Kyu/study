@@ -14,37 +14,36 @@ public class st0207_1 {
 		// input ) 성적을 입력하세요 : 90
 		// output )  당신의 학점은 A- 입니다.
 		
-		String grade = "";//학점
-		
-		
-		
-		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("성적을 입력하세요 ");
-		int num = scan.nextInt();
-		
-		
-		
-		if ( num >= 90 ) {
-			grade = "A";
-			if ( num >= 95) {
-				grade = grade + "+";
-			}
-				
-			}else if(num >= 80) {
-				grade ="B";
-			  if(num >= 85) 
-				grade = grade + "+";
-			}else { 
-				grade = "F";
-			}
-			
-			
-		
-		
-		System.out.println("당신의 학점은" + grade);
-		
-		
+//		String grade = "";//학점
+//		
+//		
+//		
+//		
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("성적을 입력하세요 ");
+//		int num = scan.nextInt();
+//		
+//		
+//		
+//		if ( num >= 90 ) {
+//			grade = "A";
+//			if ( num >= 95) {
+//				grade = grade + "+";
+//			}
+//				
+//			}else if(num >= 80) {
+//				grade ="B";
+//			  if(num >= 85) 
+//				grade = grade + "+";
+//			}else { 
+//				grade = "F";
+//			}
+//			
+//			
+//		
+//		
+//		System.out.println("당신의 학점은" + grade);	
+
 		
 		
 		
