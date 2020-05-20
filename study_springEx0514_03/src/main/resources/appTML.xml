@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+		
+		<bean id="stuScore1" class="com.javalec.ex.StuScore">
+			<constructor-arg value="1001"/>
+			<constructor-arg value="100"/>	
+			<constructor-arg value="90"/>
+			<constructor-arg value="80"/>
+			
+			
+		</bean>
+		
+		<bean id="stuScore2" class="com.javalec.ex.StuScore">
+			<constructor-arg value="1002"/>
+			<constructor-arg value="70"/>	
+			<constructor-arg value="60"/>
+			<constructor-arg value="50"/>
+			
+		</bean>
+		
+		
+		<bean id="stuScore3" class="com.javalec.ex.StuScore">
+			<constructor-arg value="1003"/>
+			<constructor-arg value="40"/>	
+			<constructor-arg value="30"/>
+			<constructor-arg value="20"/>
+			
+		</bean>
+		
+				<bean id="student3" class="com.javalec.ex.Student">
+			<constructor-arg value="1003"/>
+			<constructor-arg value="렝가"/>
+			<constructor-arg value="국문학과"/>
+			<constructor-arg value="인천"/>
+			<constructor-arg value="010-9205-8102"/>
+		</bean>
+
+
+
+		<bean id="student1" class="com.javalec.ex.Student">
+			<constructor-arg value="1001"/>
+			<constructor-arg value="라팡"/>
+			<constructor-arg value="기계공학과"/>
+			<constructor-arg value="서울"/>
+			<constructor-arg value="010-5522-8102"/>
+		</bean>
+		
+		<bean id="student2" class="com.javalec.ex.Student">
+			<constructor-arg value="1002"/>
+			<constructor-arg value="듀스"/>
+			<constructor-arg value="영문학과"/>
+			<constructor-arg value="경기"/>
+			<constructor-arg value="010-9880-8102"/>
+		</bean>
+		
+
+		
+
+
+		<bean id="stuInfo" class="com.javalec.ex.StuInfo">
+			<property name="list">
+			<list>
+				<ref bean="student1"/>
+				<ref bean="student2"/>
+				<ref bean="student3"/>
+			</list>
+		</property>
+		</bean>
+
+
+</beans>

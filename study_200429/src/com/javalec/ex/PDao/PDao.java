@@ -94,7 +94,6 @@ public class PDao {
 		
 		sql = "select * from pang_board where pId=?";
 		
-		
 		try {
 			con = ds.getConnection();
 			pstmt = con.prepareStatement(sql);
@@ -216,12 +215,7 @@ public class PDao {
 				pIndent= rs.getInt("pIndent");
 				
 				dto = new PDto(pId, pName, pTitle, pContent, pDate, pGroup, pHit, pStep, pIndent);
-				
-				
-				
 			}
-			
-			
 			
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="calcuation" class="com.javalec.ex.Calcuation"/>
+	<bean id="dto" class="com.javalec.ex.Dto">
+		<property name="name" value="라팡"/>
+		<property name="number" value="13"/>
+		<property name="cal">
+		<ref bean = "calcuation"/>
+		
+	</property>
+	
+	</bean>
+
+</beans>
